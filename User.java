@@ -6,6 +6,14 @@ public class User {
     public int age;
     public String occupation;
 
+    public User(String userName,String password,String name,int age,String occupation){
+        this.userName=userName;
+        this.password=password;
+        this.name=name;
+        this.age=age;
+        this.occupation=occupation;
+    }
+
     public void setUserName(String userName) {
         this.userName = userName;
     }
@@ -44,6 +52,9 @@ public class User {
 
     public String getOccupation() {
         return occupation;
+    }
+
+    public User(){
     }
 
 }
