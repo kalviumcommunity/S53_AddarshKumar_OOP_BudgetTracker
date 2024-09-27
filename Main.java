@@ -44,6 +44,8 @@ public class Main {
             System.out.println(users.get(i).getName());
         }
 
+        Transaction transaction =new Transaction("27-09-2024",2000,"Shopping");
+
     }
 
 }
