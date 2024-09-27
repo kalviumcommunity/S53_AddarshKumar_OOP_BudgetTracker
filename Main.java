@@ -44,7 +44,17 @@ public class Main {
             System.out.println(users.get(i).getName());
         }
 
-        Transaction transaction =new Transaction("27-09-2024",2000,"Shopping");
+        for(int i=0;i<3;i++){
+        String date=sc.nextLine();
+        int amount=sc.nextInt();
+        sc.nextLine();
+        String category=sc.nextLine();
+
+
+        Transaction transaction =new Transaction(date,amount,category);
+        }
+
+        System.out.println(Transaction.totalTransactions);
 
     }
 
