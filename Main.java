@@ -44,18 +44,24 @@ public class Main {
 //            System.out.println(users.get(i).getName());
 //        }
 
-        Scanner sc=new Scanner(System.in);
-        for(int i=0;i<3;i++){
-        String date=sc.nextLine();
-        int amount=sc.nextInt();
-        sc.nextLine();
-        String category=sc.nextLine();
+//        Scanner sc=new Scanner(System.in);
+//        for(int i=0;i<3;i++){
+//        String date=sc.nextLine();
+//        int amount=sc.nextInt();
+//        sc.nextLine();
+//        String category=sc.nextLine();
+//
+//
+//        Transaction transaction =new Transaction(date,amount,category);
+//        }
+//        Transaction.getTotalTransaction();
 
+        Budget budget=new Budget();
+        budget.setCategory("Food");
+        budget.setLimit(5000);
 
-        Transaction transaction =new Transaction(date,amount,category);
-        }
-        Transaction.getTotalTransaction();
-
+        System.out.println(budget.getCategory());
+        System.out.println(budget.getLimit());
 
     }
 
