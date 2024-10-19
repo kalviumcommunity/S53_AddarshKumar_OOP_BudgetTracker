@@ -9,6 +9,22 @@ public class Budget {
         this.spent=0;
     }
 
+    public void setCategory(String category){
+        this.category=category;
+    }
+
+    public  void setLimit(int limit){
+        this.limit=limit;
+    }
+
+    public String getCategory(){
+        return category;
+    }
+
+    public  int getLimit(){
+        return limit;
+    }
+
     
     public void addSpent(int amount){
         this.spent+=amount;
@@ -20,7 +36,11 @@ public class Budget {
             System.out.println("Budget exceeded");
         }
         else{
-            System.out.println("Budget for ...");
+            System.out.println("Budget for" +category+"is"+limit+" spent: "+spent);
         }
+    }
+
+    Budget(){
+
     }
 }
